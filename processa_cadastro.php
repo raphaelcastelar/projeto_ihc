@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 $host = "localhost";
 $user = "root";
-$pass = ""; // Senha vazia por padrão no XAMPP
+$pass = ""; 
 $dbname = "contabilidade_medicos";
 
 $conn = new mysqli($host, $user, $pass, $dbname);
