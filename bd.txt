@@ -1,0 +1,12 @@
+CREATE DATABASE contabilidade_medicos;
+USE contabilidade_medicos;
+CREATE TABLE Usuario (
+    id_usuario SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    tipo_usuario ENUM('Médico', 'Contador', 'Administrador') NOT NULL,
+    cpf VARCHAR(14) UNIQUE,
+    cnpj VARCHAR(18) UNIQUE,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    crm VARCHAR(10) UNIQUE
+);
