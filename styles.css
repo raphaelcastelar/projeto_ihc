@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: #b9bcc1;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -30,13 +30,17 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
+    padding: 8px 12px; 
+    transition: background-color 0.3s ease; 
 }
 
 nav a:hover {
     color: #cce5ff;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 4px; 
 }
 
 main {
@@ -65,7 +69,7 @@ main {
 .formulario form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: -15px;
 }
 
 .formulario label {
