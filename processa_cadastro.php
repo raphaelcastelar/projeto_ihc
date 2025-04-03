@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die("Erro na preparação da query: " . $conn->error);
     }
 
-    // Ajustado para 6 parâmetros, pois tipo_usuario é fixo
+   
     $stmt->bind_param("ssssss", $nome, $cpf, $cnpj, $email, $senha, $crm);
 
     if ($stmt->execute()) {
